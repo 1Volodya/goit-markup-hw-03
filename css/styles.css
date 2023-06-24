@@ -1,0 +1,209 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --primary-black-color: #434455;
+  --primary-white-color: #ffffff;
+  --secondary-black-color: #2e2f42;
+  --secondary-white-color: #f4f4fd;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-black-color);
+  background: var(--primary-white-color);
+}
+
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-section {
+  color: #2e2f42;
+}
+.footer-logo {
+  color: var(--secondary-white-color);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.list-nav {
+  color: var(--secondary-black-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.list-nav:hover,
+.list-nav:focus {
+  color: #404bbf;
+}
+
+.contact {
+  font-style: normal;
+}
+.contact-link {
+  color: var(--primary-black-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+.hero {
+  background: var(--secondary-black-color);
+  text-align: center;
+}
+.hero-main {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.primery-button {
+  background: #4d5ae5;
+  color: var(--primary-white-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.primery-button:hover,
+.primery-button:focus {
+  background: #404bbf;
+}
+
+.facts {
+  color: var(--secondary-black-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.facts-title {
+  color: var(--secondary-black-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.facts-taxt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.directions {
+  color: var(--secondary-black-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.team {
+  color: var(--secondary-black-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.team-title {
+  color: var(--secondary-black-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.team-taxt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team-section {
+  background: var(--secondary-white-color);
+}
+.team-section-part {
+  background: var(--primary-white-color);
+}
+.footer {
+  background: var(--secondary-black-color);
+}
+.footer-taxt {
+  color: var(--secondary-white-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* portfolio */
+
+.filters-title-hide {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-black-color);
+}
+
+.filters-button {
+  background: #f4f4fd;
+  color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.filters-button:hover,
+.filters-button:focus,
+.filters-button:active {
+  background: #404bbf;
+  color: #ffffff;
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-black-color);
+}
+.project-taxt {
+  color: var(--primary-black-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
