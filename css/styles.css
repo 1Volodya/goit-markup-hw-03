@@ -72,6 +72,8 @@ ul {
 .list-header {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .head {
   border-bottom: 1px solid #e7e9fc;
@@ -93,8 +95,7 @@ ul {
   color: #404bbf;
 }
 .list-nav-head {
-  padding-top: 24px;
-  padding-bottom: 24px;
+
 }
 
 .contact {
@@ -113,14 +114,14 @@ ul {
 }
 
 .container-hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
 .hero {
   background: var(--secondary-black-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-main {
   color: var(--primary-white-color);
@@ -320,6 +321,7 @@ img {
   color: #ffffff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
 }
 
 .project {
