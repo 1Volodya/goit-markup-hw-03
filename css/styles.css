@@ -56,24 +56,26 @@ ul {
 .list {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   align-items: center;
-  padding-left: 156px;
-  padding-right: 156px;
-  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .container-nav {
   display: flex;
   margin-right: 332px;
+  align-items: center;
 }
 .container-header {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+.head {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -88,7 +90,10 @@ ul {
 .list-nav:focus {
   color: #404bbf;
 }
-
+.list-nav-head {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .list-nav-head:not(:last-child) {
   margin-right: 40px;
 }
@@ -108,9 +113,15 @@ ul {
   color: #404bbf;
 }
 
+.container-hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
 .hero {
   background: var(--secondary-black-color);
-  text-align: center;
 }
 .hero-main {
   color: var(--primary-white-color);
@@ -119,8 +130,8 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 188px;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .primery-button {
@@ -136,7 +147,10 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
-  margin-bottom: 188px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .primery-button:hover,
 .primery-button:focus {
@@ -144,14 +158,14 @@ ul {
 }
 
 .facts {
-  color: var(--secondary-black-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  display: none;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
 }
 .facts-title {
   color: var(--secondary-black-color);
@@ -159,6 +173,7 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .facts-taxt {
   font-weight: 400;
@@ -166,9 +181,12 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.container-facts {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .facts-list {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  width: calc((1128px - 72px) / 4);
 }
 .facts-list:not(:last-child) {
   margin-right: 24px;
@@ -185,9 +203,12 @@ ul {
   margin-bottom: 72px;
 }
 .directions-list {
+  width: calc((1128px - 48px) / 3);
   border: 1px solid #000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 120px;
+}
+.container-directions {
+  padding-bottom: 120px;
 }
 img {
   display: block;
@@ -224,12 +245,16 @@ img {
 .team-item {
   padding-top: 120px;
   padding-bottom: 120px;
+
 }
 .team-section {
   background: var(--secondary-white-color);
 }
 .team-section-part {
   background: var(--primary-white-color);
+  width: calc((1128px - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-section-part:not(:last-child) {
   margin-right: 24px;
@@ -239,19 +264,20 @@ img {
 }
 .footer {
   background: var(--secondary-black-color);
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .footer-logo {
   color: var(--secondary-white-color);
 }
 .footer-logo-sections {
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .container-footer {
-  padding-top: 100px;
   padding-left: 156px;
-  padding-bottom: 100px;
 }
 .footer-taxt {
   color: var(--secondary-white-color);
@@ -264,13 +290,13 @@ img {
 
 /* portfolio */
 
-.filters-title-hide {
+/* .filters-title-hide {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-black-color);
-}
+} */
 
 .filters-button {
   background: #f4f4fd;
@@ -296,11 +322,15 @@ img {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
+
+.project {
+  padding-top: 96px; 
+  padding-bottom: 120px;
+}
 .project-title-hide {
   display: none;
 }
 .filters {
-  margin-top: 96px;
   margin-bottom: 72px;
   justify-content: center;
 }
@@ -329,7 +359,6 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  margin-bottom: 120px;
 }
 .list-portfolio-item {
   width: calc((100% - 48px) / 3);
