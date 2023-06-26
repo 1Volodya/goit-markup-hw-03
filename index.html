@@ -5,31 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- верхня частина сайту хедер -->
       <header class="head">
         <!-- навігація по сайту -->
-        <div class="container container-header">
+        <div class="container head-container">
           <nav class="container-nav">
             <!-- логотип компанії -->
               <a href="./index.html" class="logo link"
               >Web<span class="logo-section logo-sections-head">Studio</span></a
             >
-            <ul class="list">
+            <ul class="list list-header">
               <li class="list-nav-head"><a class="list-nav link" href="./index.html">Studio</a></li>
               <li class="list-nav-head">
                 <a class="list-nav link" href="./portfolio.html">Portfolio</a>
@@ -39,7 +36,7 @@
           </nav>
           <!-- контакти компанії -->
           <address class="contact">
-            <ul class="list">
+            <ul class="list list-header">
               <li class="list-nav-head">
                 <a class="contact-link link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
@@ -69,11 +66,11 @@
         </section>
 
         <!-- section 1 -->
-        <section>
-          <div class="container container-facts">
+        <section class="container-facts">
+          <div class="container">
             <h2 class="facts">Section</h2>
             <!-- про компанію головні напрямки -->
-            <ul class="list">
+            <ul class="list facts-lid">
               <li class="facts-list">
               <h3 class="facts-title">Strategy</h3>
               <p class="facts-taxt">
@@ -107,11 +104,11 @@
         </section>
 
         <!-- section 2 -->
-        <section class="section">
-          <div class="container container-directions">
+        <section class="directions-section">
+          <div class="container">
             <h2 class="directions">What are we doing</h2>
             <!-- те чим займається компанія -->
-            <ul class="list">
+            <ul class="list directions-lid">
               <li class="directions-list">
                 <img
                 src="./images/img1.jpg"
@@ -139,10 +136,10 @@
 
         <!-- section 3 -->
         <section class="team-section">
-          <div class="container team-item">
+          <div class="container">
             <h2 class="team">Our Team</h2>
           <!-- опис команди -->
-            <ul class="list">
+            <ul class="list team-lid">
               <li class="team-section-part">
                 <img
                 src="./images/img-MarkGuerrero.jpg"
