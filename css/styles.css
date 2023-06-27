@@ -157,20 +157,10 @@ ul {
   background: #404bbf;
 }
 
-.facts {
-  /* position: absolute !important;
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0 !important;
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden; */
-
-}
 .hide {
-  position: absolute;
+  /* opacity: 0; */
   visibility: hidden;
+  position: absolute;
 }
 .facts-title {
   color: var(--secondary-black-color);
