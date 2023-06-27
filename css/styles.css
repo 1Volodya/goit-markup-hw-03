@@ -158,14 +158,19 @@ ul {
 }
 
 .facts {
-  position: absolute !important;
+  /* position: absolute !important;
   height: 1px;
   width: 1px;
   margin: -1px;
   padding: 0 !important;
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
+  overflow: hidden; */
+
+}
+.hide {
+  position: absolute;
+  visibility: hidden;
 }
 .facts-title {
   color: var(--secondary-black-color);
@@ -328,16 +333,7 @@ img {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.project-title-hide {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0 !important;
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-}
+
 .filters {
   display: flex;
   gap: 24px;
